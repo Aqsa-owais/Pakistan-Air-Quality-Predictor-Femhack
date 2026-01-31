@@ -1,0 +1,624 @@
+"""
+Real-time Air Quality Prediction Web Interface
+Simple Flask web app for real-time AQI predictions
+"""
+
+from flask import Flask, render_template, request, jsonify
+import sys
+import os
+sys.path.append('src')
+
+from realtime_predictor import RealTimeAQIPredictor
+import json
+
+app = Flask(__name__)
+
+# Global predictor instance
+predictor = None
+
+def load_predictor():
+    """Load the prediction model"""
+    global predictor
+    
+    model_files = [f for f in os.listdir('models') if f.endswith('.joblib')]
+    if not model_files:
+        print("❌ No trained models found. Please run model training first.")
+        return False
+    
+    model_path = f'models/{model_files[0]}'
+    predictor = RealTimeAQIPredictor(model_path)
+    
+    return predictor.model is not None
+
+@app.route('/')
+def index():
+    """Main page"""
+    return render_template('index.html')
+
+@app.route('/predict', methods=['POST'])
+def predict():
+    """Handle prediction requests"""
+    try:
+        # Get input data from request
+        input_data = request.json
+        
+        # Validate required fields
+        required_fields = ['PM2.5', 'PM10', 'Temperature', 'Humidity', 'Wind_Speed']
+        for field in required_fields:
+            if field not in input_data or input_data[field] == '':
+                return jsonify({'error': f'Missing required field: {field}'}), 400
+        
+        # Convert string values to float
+        for field in required_fields:
+            try:
+                input_data[field] = float(input_data[field])
+            except ValueError:
+                return jsonify({'error': f'Invalid value for {field}'}), 400
+        
+        # Optional fields
+        if 'Pressure' in input_data and input_data['Pressure']:
+            try:
+                input_data['Pressure'] = float(input_data['Pressure'])
+            except ValueError:
+                del input_data['Pressure']
+        
+        # Make prediction
+        result = predictor.predict_from_input(input_data)
+        
+        return jsonify(result)
+    
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/model-info')
+def model_info():
+    """Get model information"""
+    try:
+        info = predictor.get_model_info()
+        return jsonify(info)
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
+@app.route('/health')
+def health():
+    """Health check endpoint"""
+    return jsonify({
+        'status': 'healthy',
+        'model_loaded': predictor is not None and predictor.model is not None
+    })
+
+# Create templates directory and HTML template
+def create_template():
+    """Create HTML template for the web interface"""
+    os.makedirs('templates', exist_ok=True)
+    
+    html_content = '''<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-time Air Quality Predictor</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        
+        .form-container {
+            padding: 40px;
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        input, select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+        
+        input:focus, select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        .required {
+            color: #e74c3c;
+        }
+        
+        .predict-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s;
+            width: 100%;
+            margin-top: 20px;
+        }
+        
+        .predict-btn:hover {
+            transform: translateY(-2px);
+        }
+        
+        .predict-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .results {
+            margin-top: 30px;
+            padding: 25px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            display: none;
+        }
+        
+        .result-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .category-result {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .confidence {
+            font-size: 1.1em;
+            color: #666;
+        }
+        
+        .recommendations {
+            margin-top: 20px;
+        }
+        
+        .recommendations h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        
+        .recommendations ul {
+            list-style: none;
+        }
+        
+        .recommendations li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .probabilities {
+            margin-top: 20px;
+        }
+        
+        .prob-bar {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .prob-label {
+            width: 200px;
+            font-size: 14px;
+        }
+        
+        .prob-visual {
+            flex: 1;
+            height: 20px;
+            background: #e0e0e0;
+            border-radius: 10px;
+            margin: 0 10px;
+            overflow: hidden;
+        }
+        
+        .prob-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            border-radius: 10px;
+            transition: width 0.5s ease;
+        }
+        
+        .prob-value {
+            width: 50px;
+            text-align: right;
+            font-weight: bold;
+        }
+        
+        .error {
+            background: #ffebee;
+            color: #c62828;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border-left: 4px solid #c62828;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+        }
+        
+        .category-good { color: #4caf50; }
+        .category-moderate { color: #ff9800; }
+        .category-unhealthy-sensitive { color: #ff5722; }
+        .category-unhealthy { color: #f44336; }
+        .category-very-unhealthy { color: #9c27b0; }
+        .category-hazardous { color: #795548; }
+        
+        @media (max-width: 768px) {
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+            
+            .container {
+                margin: 10px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .form-container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌫️ Air Quality Predictor</h1>
+            <p>Get real-time air quality predictions for Pakistani cities</p>
+        </div>
+        
+        <div class="form-container">
+            <form id="predictionForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="pm25">PM2.5 Concentration <span class="required">*</span></label>
+                        <input type="number" id="pm25" name="PM2.5" step="0.1" min="0" required 
+                               placeholder="e.g., 35.5 μg/m³">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="pm10">PM10 Concentration <span class="required">*</span></label>
+                        <input type="number" id="pm10" name="PM10" step="0.1" min="0" required 
+                               placeholder="e.g., 65.2 μg/m³">
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="temperature">Temperature <span class="required">*</span></label>
+                        <input type="number" id="temperature" name="Temperature" step="0.1" required 
+                               placeholder="e.g., 28.5 °C">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="humidity">Humidity <span class="required">*</span></label>
+                        <input type="number" id="humidity" name="Humidity" step="0.1" min="0" max="100" required 
+                               placeholder="e.g., 65 %">
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="windSpeed">Wind Speed <span class="required">*</span></label>
+                        <input type="number" id="windSpeed" name="Wind_Speed" step="0.1" min="0" required 
+                               placeholder="e.g., 5.2 km/h">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="pressure">Atmospheric Pressure</label>
+                        <input type="number" id="pressure" name="Pressure" step="0.1" min="0" 
+                               placeholder="e.g., 1013.25 hPa (optional)">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="city">City</label>
+                    <select id="city" name="City">
+                        <option value="">Select a city (optional)</option>
+                        <option value="Karachi">Karachi</option>
+                        <option value="Lahore">Lahore</option>
+                        <option value="Islamabad">Islamabad</option>
+                        <option value="Rawalpindi">Rawalpindi</option>
+                        <option value="Faisalabad">Faisalabad</option>
+                        <option value="Multan">Multan</option>
+                        <option value="Peshawar">Peshawar</option>
+                        <option value="Quetta">Quetta</option>
+                    </select>
+                </div>
+                
+                <button type="submit" class="predict-btn" id="predictBtn">
+                    🔮 Predict Air Quality
+                </button>
+            </form>
+            
+            <div id="results" class="results">
+                <div id="loading" class="loading" style="display: none;">
+                    <p>🔄 Making prediction...</p>
+                </div>
+                
+                <div id="prediction-results" style="display: none;">
+                    <div class="result-header">
+                        <div id="category-result" class="category-result"></div>
+                        <div id="confidence" class="confidence"></div>
+                        <div id="aqi-estimate" style="margin-top: 10px; font-size: 1.2em;"></div>
+                        <div id="timestamp" style="margin-top: 5px; color: #666; font-size: 0.9em;"></div>
+                    </div>
+                    
+                    <div class="recommendations">
+                        <h3>💡 Health Recommendations</h3>
+                        <ul id="recommendations-list"></ul>
+                    </div>
+                    
+                    <div class="probabilities">
+                        <h3>📊 Category Probabilities</h3>
+                        <div id="probabilities-list"></div>
+                    </div>
+                </div>
+                
+                <div id="error-message" class="error" style="display: none;"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('predictionForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const data = {};
+            
+            // Convert form data to object
+            for (let [key, value] of formData.entries()) {
+                if (value.trim() !== '') {
+                    data[key] = value;
+                }
+            }
+            
+            // Show loading
+            document.getElementById('results').style.display = 'block';
+            document.getElementById('loading').style.display = 'block';
+            document.getElementById('prediction-results').style.display = 'none';
+            document.getElementById('error-message').style.display = 'none';
+            document.getElementById('predictBtn').disabled = true;
+            
+            try {
+                const response = await fetch('/predict', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data)
+                });
+                
+                const result = await response.json();
+                
+                if (result.error) {
+                    throw new Error(result.error);
+                }
+                
+                displayResults(result);
+                
+            } catch (error) {
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('error-message').style.display = 'block';
+                document.getElementById('error-message').textContent = 'Error: ' + error.message;
+            } finally {
+                document.getElementById('predictBtn').disabled = false;
+            }
+        });
+        
+        function displayResults(result) {
+            document.getElementById('loading').style.display = 'none';
+            document.getElementById('prediction-results').style.display = 'block';
+            
+            // Category result
+            const categoryElement = document.getElementById('category-result');
+            const category = result.predicted_category;
+            categoryElement.textContent = category;
+            
+            // Apply category-specific styling
+            categoryElement.className = 'category-result ' + getCategoryClass(category);
+            
+            // Confidence
+            document.getElementById('confidence').textContent = 
+                `Confidence: ${(result.confidence * 100).toFixed(1)}%`;
+            
+            // AQI estimate
+            if (result.aqi_estimate) {
+                document.getElementById('aqi-estimate').textContent = 
+                    `Estimated AQI: ${result.aqi_estimate}`;
+            }
+            
+            // Timestamp
+            document.getElementById('timestamp').textContent = 
+                `Prediction made at: ${result.timestamp}`;
+            
+            // Recommendations
+            const recList = document.getElementById('recommendations-list');
+            recList.innerHTML = '';
+            result.recommendations.forEach(rec => {
+                const li = document.createElement('li');
+                li.textContent = rec;
+                recList.appendChild(li);
+            });
+            
+            // Probabilities
+            const probList = document.getElementById('probabilities-list');
+            probList.innerHTML = '';
+            
+            // Sort probabilities by value
+            const sortedProbs = Object.entries(result.all_probabilities)
+                .sort(([,a], [,b]) => b - a);
+            
+            sortedProbs.forEach(([category, prob]) => {
+                const probBar = document.createElement('div');
+                probBar.className = 'prob-bar';
+                
+                probBar.innerHTML = `
+                    <div class="prob-label">${category}</div>
+                    <div class="prob-visual">
+                        <div class="prob-fill" style="width: ${prob * 100}%"></div>
+                    </div>
+                    <div class="prob-value">${(prob * 100).toFixed(1)}%</div>
+                `;
+                
+                probList.appendChild(probBar);
+            });
+        }
+        
+        function getCategoryClass(category) {
+            const classMap = {
+                'Good': 'category-good',
+                'Moderate': 'category-moderate',
+                'Unhealthy for Sensitive Groups': 'category-unhealthy-sensitive',
+                'Unhealthy': 'category-unhealthy',
+                'Very Unhealthy': 'category-very-unhealthy',
+                'Hazardous': 'category-hazardous'
+            };
+            return classMap[category] || '';
+        }
+        
+        // Add sample data buttons
+        function loadSampleData(scenario) {
+            const samples = {
+                good: {
+                    'PM2.5': 15,
+                    'PM10': 25,
+                    'Temperature': 22,
+                    'Humidity': 45,
+                    'Wind_Speed': 8,
+                    'City': 'Islamabad'
+                },
+                moderate: {
+                    'PM2.5': 45,
+                    'PM10': 75,
+                    'Temperature': 28,
+                    'Humidity': 65,
+                    'Wind_Speed': 3,
+                    'City': 'Lahore'
+                },
+                unhealthy: {
+                    'PM2.5': 120,
+                    'PM10': 180,
+                    'Temperature': 35,
+                    'Humidity': 80,
+                    'Wind_Speed': 1,
+                    'City': 'Karachi'
+                }
+            };
+            
+            const data = samples[scenario];
+            if (data) {
+                Object.entries(data).forEach(([key, value]) => {
+                    const element = document.querySelector(`[name="${key}"]`);
+                    if (element) {
+                        element.value = value;
+                    }
+                });
+            }
+        }
+        
+        // Add sample buttons after form
+        const form = document.getElementById('predictionForm');
+        const sampleButtons = document.createElement('div');
+        sampleButtons.style.marginTop = '20px';
+        sampleButtons.style.textAlign = 'center';
+        sampleButtons.innerHTML = `
+            <p style="margin-bottom: 10px; color: #666;">Quick samples:</p>
+            <button type="button" onclick="loadSampleData('good')" style="margin: 5px; padding: 8px 15px; background: #4caf50; color: white; border: none; border-radius: 5px; cursor: pointer;">Good Air</button>
+            <button type="button" onclick="loadSampleData('moderate')" style="margin: 5px; padding: 8px 15px; background: #ff9800; color: white; border: none; border-radius: 5px; cursor: pointer;">Moderate</button>
+            <button type="button" onclick="loadSampleData('unhealthy')" style="margin: 5px; padding: 8px 15px; background: #f44336; color: white; border: none; border-radius: 5px; cursor: pointer;">Unhealthy</button>
+        `;
+        form.parentNode.insertBefore(sampleButtons, form.nextSibling);
+    </script>
+</body>
+</html>'''
+    
+    with open('templates/index.html', 'w', encoding='utf-8') as f:
+        f.write(html_content)
+
+def main():
+    """Run the Flask web application"""
+    print("🌐 Starting Real-time Air Quality Prediction Web Server...")
+    
+    # Load predictor
+    if not load_predictor():
+        print("❌ Failed to load prediction model. Exiting.")
+        return
+    
+    # Create HTML template
+    create_template()
+    print("✅ Created web interface template")
+    
+    print("✅ Model loaded successfully")
+    print("\n🚀 Starting web server...")
+    print("📱 Open your browser and go to: http://localhost:5000")
+    print("⏹️  Press Ctrl+C to stop the server\n")
+    
+    try:
+        app.run(debug=True, host='0.0.0.0', port=5000)
+    except KeyboardInterrupt:
+        print("\n👋 Server stopped. Goodbye!")
+
+if __name__ == "__main__":
+    main()
