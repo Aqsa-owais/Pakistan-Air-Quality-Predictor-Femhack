@@ -1,0 +1,1116 @@
+City,Date,Predicted_AQI_Category,Model
+Faisalabad,2023-05-27,Unhealthy,xgboost
+Faisalabad,2023-05-28,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-05-29,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-05-30,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-05-31,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-06-01,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-06-02,Moderate,xgboost
+Faisalabad,2023-06-03,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-06-04,Moderate,xgboost
+Faisalabad,2023-06-05,Moderate,xgboost
+Faisalabad,2023-06-06,Moderate,xgboost
+Faisalabad,2023-06-07,Moderate,xgboost
+Faisalabad,2023-06-08,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-06-09,Moderate,xgboost
+Faisalabad,2023-06-10,Moderate,xgboost
+Faisalabad,2023-06-11,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-06-12,Moderate,xgboost
+Faisalabad,2023-06-13,Moderate,xgboost
+Faisalabad,2023-06-14,Moderate,xgboost
+Faisalabad,2023-06-15,Moderate,xgboost
+Faisalabad,2023-06-16,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-06-17,Moderate,xgboost
+Faisalabad,2023-06-18,Good,xgboost
+Faisalabad,2023-06-19,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-06-20,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-06-21,Moderate,xgboost
+Faisalabad,2023-06-22,Moderate,xgboost
+Faisalabad,2023-06-23,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-06-24,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-06-25,Moderate,xgboost
+Faisalabad,2023-06-26,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-06-27,Moderate,xgboost
+Faisalabad,2023-06-28,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-06-29,Moderate,xgboost
+Faisalabad,2023-06-30,Moderate,xgboost
+Faisalabad,2023-07-01,Moderate,xgboost
+Faisalabad,2023-07-02,Moderate,xgboost
+Faisalabad,2023-07-03,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-07-04,Moderate,xgboost
+Faisalabad,2023-07-05,Moderate,xgboost
+Faisalabad,2023-07-06,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-07-07,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-07-08,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-07-09,Moderate,xgboost
+Faisalabad,2023-07-10,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-07-11,Moderate,xgboost
+Faisalabad,2023-07-12,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-07-13,Moderate,xgboost
+Faisalabad,2023-07-14,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-07-15,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-07-16,Moderate,xgboost
+Faisalabad,2023-07-17,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-07-18,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-07-19,Moderate,xgboost
+Faisalabad,2023-07-20,Moderate,xgboost
+Faisalabad,2023-07-21,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-07-22,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-07-23,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-07-24,Moderate,xgboost
+Faisalabad,2023-07-25,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-07-26,Moderate,xgboost
+Faisalabad,2023-07-27,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-07-28,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-07-29,Moderate,xgboost
+Faisalabad,2023-07-30,Moderate,xgboost
+Faisalabad,2023-07-31,Moderate,xgboost
+Faisalabad,2023-08-01,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-08-02,Moderate,xgboost
+Faisalabad,2023-08-03,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-08-04,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-08-05,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-08-06,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-08-07,Hazardous,xgboost
+Faisalabad,2023-08-08,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-08-09,Moderate,xgboost
+Faisalabad,2023-08-10,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-08-11,Moderate,xgboost
+Faisalabad,2023-08-12,Moderate,xgboost
+Faisalabad,2023-08-13,Moderate,xgboost
+Faisalabad,2023-08-14,Moderate,xgboost
+Faisalabad,2023-08-15,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-08-16,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-08-17,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-08-18,Moderate,xgboost
+Faisalabad,2023-08-19,Moderate,xgboost
+Faisalabad,2023-08-20,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-08-21,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-08-22,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-08-23,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-08-24,Moderate,xgboost
+Faisalabad,2023-08-25,Moderate,xgboost
+Faisalabad,2023-08-26,Moderate,xgboost
+Faisalabad,2023-08-27,Moderate,xgboost
+Faisalabad,2023-08-28,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-08-29,Moderate,xgboost
+Faisalabad,2023-08-30,Moderate,xgboost
+Faisalabad,2023-08-31,Moderate,xgboost
+Faisalabad,2023-09-01,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-09-02,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-09-03,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-09-04,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-09-05,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-09-06,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-09-07,Unhealthy,xgboost
+Faisalabad,2023-09-08,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-09-09,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-09-10,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-09-11,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-09-12,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-09-13,Unhealthy,xgboost
+Faisalabad,2023-09-14,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-09-15,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-09-16,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-09-17,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-09-18,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-09-19,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-09-20,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-09-21,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-09-22,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-09-23,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-09-24,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-09-25,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-09-26,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-09-27,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-09-28,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-09-29,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-09-30,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-10-01,Moderate,xgboost
+Faisalabad,2023-10-02,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-10-03,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-10-04,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-10-05,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-10-06,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-10-07,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-10-08,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-10-09,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-10-10,Unhealthy,xgboost
+Faisalabad,2023-10-11,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-10-12,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-10-13,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-10-14,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-10-15,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-10-16,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-10-17,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-10-18,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-10-19,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-10-20,Unhealthy,xgboost
+Faisalabad,2023-10-21,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-10-22,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-10-23,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-10-24,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-10-25,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-10-26,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-10-27,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-10-28,Moderate,xgboost
+Faisalabad,2023-10-29,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-10-30,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-10-31,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-11-01,Unhealthy,xgboost
+Faisalabad,2023-11-02,Unhealthy,xgboost
+Faisalabad,2023-11-03,Very Unhealthy,xgboost
+Faisalabad,2023-11-04,Unhealthy,xgboost
+Faisalabad,2023-11-05,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-11-06,Unhealthy,xgboost
+Faisalabad,2023-11-07,Unhealthy,xgboost
+Faisalabad,2023-11-08,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-11-09,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-11-10,Hazardous,xgboost
+Faisalabad,2023-11-11,Unhealthy,xgboost
+Faisalabad,2023-11-12,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-11-13,Unhealthy,xgboost
+Faisalabad,2023-11-14,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-11-15,Very Unhealthy,xgboost
+Faisalabad,2023-11-16,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-11-17,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-11-18,Unhealthy,xgboost
+Faisalabad,2023-11-19,Unhealthy,xgboost
+Faisalabad,2023-11-20,Unhealthy,xgboost
+Faisalabad,2023-11-21,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-11-22,Unhealthy,xgboost
+Faisalabad,2023-11-23,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-11-24,Unhealthy,xgboost
+Faisalabad,2023-11-25,Unhealthy,xgboost
+Faisalabad,2023-11-26,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-11-27,Unhealthy,xgboost
+Faisalabad,2023-11-28,Unhealthy,xgboost
+Faisalabad,2023-11-29,Unhealthy,xgboost
+Faisalabad,2023-11-30,Unhealthy,xgboost
+Faisalabad,2023-12-01,Unhealthy,xgboost
+Faisalabad,2023-12-02,Unhealthy,xgboost
+Faisalabad,2023-12-03,Unhealthy,xgboost
+Faisalabad,2023-12-04,Unhealthy,xgboost
+Faisalabad,2023-12-05,Unhealthy,xgboost
+Faisalabad,2023-12-06,Very Unhealthy,xgboost
+Faisalabad,2023-12-07,Very Unhealthy,xgboost
+Faisalabad,2023-12-08,Hazardous,xgboost
+Faisalabad,2023-12-09,Unhealthy,xgboost
+Faisalabad,2023-12-10,Unhealthy,xgboost
+Faisalabad,2023-12-11,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-12-12,Very Unhealthy,xgboost
+Faisalabad,2023-12-13,Unhealthy,xgboost
+Faisalabad,2023-12-14,Unhealthy,xgboost
+Faisalabad,2023-12-15,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-12-16,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-12-17,Unhealthy,xgboost
+Faisalabad,2023-12-18,Very Unhealthy,xgboost
+Faisalabad,2023-12-19,Unhealthy,xgboost
+Faisalabad,2023-12-20,Unhealthy,xgboost
+Faisalabad,2023-12-21,Very Unhealthy,xgboost
+Faisalabad,2023-12-22,Unhealthy,xgboost
+Faisalabad,2023-12-23,Unhealthy,xgboost
+Faisalabad,2023-12-24,Hazardous,xgboost
+Faisalabad,2023-12-25,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-12-26,Unhealthy,xgboost
+Faisalabad,2023-12-27,Unhealthy,xgboost
+Faisalabad,2023-12-28,Unhealthy for Sensitive Groups,xgboost
+Faisalabad,2023-12-29,Very Unhealthy,xgboost
+Faisalabad,2023-12-30,Unhealthy,xgboost
+Faisalabad,2023-12-31,Unhealthy,xgboost
+Faisalabad,2024-01-01,Very Unhealthy,xgboost
+Faisalabad,2024-01-02,Very Unhealthy,xgboost_forecast
+Faisalabad,2024-01-03,Very Unhealthy,xgboost_forecast
+Faisalabad,2024-01-04,Very Unhealthy,xgboost_forecast
+Islamabad,2023-05-27,Moderate,xgboost
+Islamabad,2023-05-28,Moderate,xgboost
+Islamabad,2023-05-29,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-05-30,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-05-31,Moderate,xgboost
+Islamabad,2023-06-01,Moderate,xgboost
+Islamabad,2023-06-02,Moderate,xgboost
+Islamabad,2023-06-03,Moderate,xgboost
+Islamabad,2023-06-04,Moderate,xgboost
+Islamabad,2023-06-05,Moderate,xgboost
+Islamabad,2023-06-06,Moderate,xgboost
+Islamabad,2023-06-07,Moderate,xgboost
+Islamabad,2023-06-08,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-06-09,Moderate,xgboost
+Islamabad,2023-06-10,Moderate,xgboost
+Islamabad,2023-06-11,Moderate,xgboost
+Islamabad,2023-06-12,Moderate,xgboost
+Islamabad,2023-06-13,Moderate,xgboost
+Islamabad,2023-06-14,Moderate,xgboost
+Islamabad,2023-06-15,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-06-16,Moderate,xgboost
+Islamabad,2023-06-17,Good,xgboost
+Islamabad,2023-06-18,Moderate,xgboost
+Islamabad,2023-06-19,Moderate,xgboost
+Islamabad,2023-06-20,Moderate,xgboost
+Islamabad,2023-06-21,Moderate,xgboost
+Islamabad,2023-06-22,Moderate,xgboost
+Islamabad,2023-06-23,Moderate,xgboost
+Islamabad,2023-06-24,Moderate,xgboost
+Islamabad,2023-06-25,Moderate,xgboost
+Islamabad,2023-06-26,Moderate,xgboost
+Islamabad,2023-06-27,Moderate,xgboost
+Islamabad,2023-06-28,Moderate,xgboost
+Islamabad,2023-06-29,Moderate,xgboost
+Islamabad,2023-06-30,Good,xgboost
+Islamabad,2023-07-01,Moderate,xgboost
+Islamabad,2023-07-02,Moderate,xgboost
+Islamabad,2023-07-03,Moderate,xgboost
+Islamabad,2023-07-04,Moderate,xgboost
+Islamabad,2023-07-05,Moderate,xgboost
+Islamabad,2023-07-06,Moderate,xgboost
+Islamabad,2023-07-07,Moderate,xgboost
+Islamabad,2023-07-08,Moderate,xgboost
+Islamabad,2023-07-09,Moderate,xgboost
+Islamabad,2023-07-10,Moderate,xgboost
+Islamabad,2023-07-11,Moderate,xgboost
+Islamabad,2023-07-12,Moderate,xgboost
+Islamabad,2023-07-13,Moderate,xgboost
+Islamabad,2023-07-14,Moderate,xgboost
+Islamabad,2023-07-15,Moderate,xgboost
+Islamabad,2023-07-16,Moderate,xgboost
+Islamabad,2023-07-17,Moderate,xgboost
+Islamabad,2023-07-18,Moderate,xgboost
+Islamabad,2023-07-19,Moderate,xgboost
+Islamabad,2023-07-20,Moderate,xgboost
+Islamabad,2023-07-21,Moderate,xgboost
+Islamabad,2023-07-22,Moderate,xgboost
+Islamabad,2023-07-23,Moderate,xgboost
+Islamabad,2023-07-24,Moderate,xgboost
+Islamabad,2023-07-25,Moderate,xgboost
+Islamabad,2023-07-26,Moderate,xgboost
+Islamabad,2023-07-27,Moderate,xgboost
+Islamabad,2023-07-28,Moderate,xgboost
+Islamabad,2023-07-29,Moderate,xgboost
+Islamabad,2023-07-30,Moderate,xgboost
+Islamabad,2023-07-31,Moderate,xgboost
+Islamabad,2023-08-01,Moderate,xgboost
+Islamabad,2023-08-02,Good,xgboost
+Islamabad,2023-08-03,Good,xgboost
+Islamabad,2023-08-04,Moderate,xgboost
+Islamabad,2023-08-05,Moderate,xgboost
+Islamabad,2023-08-06,Moderate,xgboost
+Islamabad,2023-08-07,Moderate,xgboost
+Islamabad,2023-08-08,Moderate,xgboost
+Islamabad,2023-08-09,Good,xgboost
+Islamabad,2023-08-10,Moderate,xgboost
+Islamabad,2023-08-11,Moderate,xgboost
+Islamabad,2023-08-12,Moderate,xgboost
+Islamabad,2023-08-13,Hazardous,xgboost
+Islamabad,2023-08-14,Moderate,xgboost
+Islamabad,2023-08-15,Moderate,xgboost
+Islamabad,2023-08-16,Moderate,xgboost
+Islamabad,2023-08-17,Moderate,xgboost
+Islamabad,2023-08-18,Good,xgboost
+Islamabad,2023-08-19,Good,xgboost
+Islamabad,2023-08-20,Moderate,xgboost
+Islamabad,2023-08-21,Moderate,xgboost
+Islamabad,2023-08-22,Good,xgboost
+Islamabad,2023-08-23,Moderate,xgboost
+Islamabad,2023-08-24,Moderate,xgboost
+Islamabad,2023-08-25,Good,xgboost
+Islamabad,2023-08-26,Moderate,xgboost
+Islamabad,2023-08-27,Good,xgboost
+Islamabad,2023-08-28,Moderate,xgboost
+Islamabad,2023-08-29,Moderate,xgboost
+Islamabad,2023-08-30,Moderate,xgboost
+Islamabad,2023-08-31,Moderate,xgboost
+Islamabad,2023-09-01,Moderate,xgboost
+Islamabad,2023-09-02,Moderate,xgboost
+Islamabad,2023-09-03,Moderate,xgboost
+Islamabad,2023-09-04,Moderate,xgboost
+Islamabad,2023-09-05,Moderate,xgboost
+Islamabad,2023-09-06,Moderate,xgboost
+Islamabad,2023-09-07,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-09-08,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-09-09,Moderate,xgboost
+Islamabad,2023-09-10,Moderate,xgboost
+Islamabad,2023-09-11,Moderate,xgboost
+Islamabad,2023-09-12,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-09-13,Moderate,xgboost
+Islamabad,2023-09-14,Moderate,xgboost
+Islamabad,2023-09-15,Moderate,xgboost
+Islamabad,2023-09-16,Moderate,xgboost
+Islamabad,2023-09-17,Moderate,xgboost
+Islamabad,2023-09-18,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-09-19,Moderate,xgboost
+Islamabad,2023-09-20,Moderate,xgboost
+Islamabad,2023-09-21,Moderate,xgboost
+Islamabad,2023-09-22,Moderate,xgboost
+Islamabad,2023-09-23,Moderate,xgboost
+Islamabad,2023-09-24,Moderate,xgboost
+Islamabad,2023-09-25,Moderate,xgboost
+Islamabad,2023-09-26,Moderate,xgboost
+Islamabad,2023-09-27,Moderate,xgboost
+Islamabad,2023-09-28,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-09-29,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-09-30,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-10-01,Moderate,xgboost
+Islamabad,2023-10-02,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-10-03,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-10-04,Moderate,xgboost
+Islamabad,2023-10-05,Moderate,xgboost
+Islamabad,2023-10-06,Moderate,xgboost
+Islamabad,2023-10-07,Moderate,xgboost
+Islamabad,2023-10-08,Moderate,xgboost
+Islamabad,2023-10-09,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-10-10,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-10-11,Moderate,xgboost
+Islamabad,2023-10-12,Moderate,xgboost
+Islamabad,2023-10-13,Moderate,xgboost
+Islamabad,2023-10-14,Moderate,xgboost
+Islamabad,2023-10-15,Moderate,xgboost
+Islamabad,2023-10-16,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-10-17,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-10-18,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-10-19,Moderate,xgboost
+Islamabad,2023-10-20,Moderate,xgboost
+Islamabad,2023-10-21,Moderate,xgboost
+Islamabad,2023-10-22,Moderate,xgboost
+Islamabad,2023-10-23,Moderate,xgboost
+Islamabad,2023-10-24,Moderate,xgboost
+Islamabad,2023-10-25,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-10-26,Moderate,xgboost
+Islamabad,2023-10-27,Moderate,xgboost
+Islamabad,2023-10-28,Moderate,xgboost
+Islamabad,2023-10-29,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-10-30,Moderate,xgboost
+Islamabad,2023-10-31,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-11-01,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-11-02,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-11-03,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-11-04,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-11-05,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-11-06,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-11-07,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-11-08,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-11-09,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-11-10,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-11-11,Moderate,xgboost
+Islamabad,2023-11-12,Moderate,xgboost
+Islamabad,2023-11-13,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-11-14,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-11-15,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-11-16,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-11-17,Unhealthy,xgboost
+Islamabad,2023-11-18,Moderate,xgboost
+Islamabad,2023-11-19,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-11-20,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-11-21,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-11-22,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-11-23,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-11-24,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-11-25,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-11-26,Unhealthy,xgboost
+Islamabad,2023-11-27,Hazardous,xgboost
+Islamabad,2023-11-28,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-11-29,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-11-30,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-12-01,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-12-02,Moderate,xgboost
+Islamabad,2023-12-03,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-12-04,Unhealthy,xgboost
+Islamabad,2023-12-05,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-12-06,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-12-07,Moderate,xgboost
+Islamabad,2023-12-08,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-12-09,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-12-10,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-12-11,Hazardous,xgboost
+Islamabad,2023-12-12,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-12-13,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-12-14,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-12-15,Unhealthy,xgboost
+Islamabad,2023-12-16,Moderate,xgboost
+Islamabad,2023-12-17,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-12-18,Hazardous,xgboost
+Islamabad,2023-12-19,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-12-20,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-12-21,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-12-22,Unhealthy,xgboost
+Islamabad,2023-12-23,Hazardous,xgboost
+Islamabad,2023-12-24,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-12-25,Hazardous,xgboost
+Islamabad,2023-12-26,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-12-27,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-12-28,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-12-29,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-12-30,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2023-12-31,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2024-01-01,Unhealthy for Sensitive Groups,xgboost
+Islamabad,2024-01-02,Unhealthy for Sensitive Groups,xgboost_forecast
+Islamabad,2024-01-03,Unhealthy for Sensitive Groups,xgboost_forecast
+Islamabad,2024-01-04,Unhealthy for Sensitive Groups,xgboost_forecast
+Karachi,2023-05-27,Moderate,xgboost
+Karachi,2023-05-28,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-05-29,Moderate,xgboost
+Karachi,2023-05-30,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-05-31,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-06-01,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-06-02,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-06-03,Moderate,xgboost
+Karachi,2023-06-04,Moderate,xgboost
+Karachi,2023-06-05,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-06-06,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-06-07,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-06-08,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-06-09,Moderate,xgboost
+Karachi,2023-06-10,Moderate,xgboost
+Karachi,2023-06-11,Moderate,xgboost
+Karachi,2023-06-12,Moderate,xgboost
+Karachi,2023-06-13,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-06-14,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-06-15,Moderate,xgboost
+Karachi,2023-06-16,Moderate,xgboost
+Karachi,2023-06-17,Moderate,xgboost
+Karachi,2023-06-18,Moderate,xgboost
+Karachi,2023-06-19,Moderate,xgboost
+Karachi,2023-06-20,Moderate,xgboost
+Karachi,2023-06-21,Moderate,xgboost
+Karachi,2023-06-22,Moderate,xgboost
+Karachi,2023-06-23,Moderate,xgboost
+Karachi,2023-06-24,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-06-25,Moderate,xgboost
+Karachi,2023-06-26,Moderate,xgboost
+Karachi,2023-06-27,Moderate,xgboost
+Karachi,2023-06-28,Moderate,xgboost
+Karachi,2023-06-29,Moderate,xgboost
+Karachi,2023-06-30,Moderate,xgboost
+Karachi,2023-07-01,Moderate,xgboost
+Karachi,2023-07-02,Moderate,xgboost
+Karachi,2023-07-03,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-07-04,Moderate,xgboost
+Karachi,2023-07-05,Moderate,xgboost
+Karachi,2023-07-06,Moderate,xgboost
+Karachi,2023-07-07,Moderate,xgboost
+Karachi,2023-07-08,Moderate,xgboost
+Karachi,2023-07-09,Moderate,xgboost
+Karachi,2023-07-10,Moderate,xgboost
+Karachi,2023-07-11,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-07-12,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-07-13,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-07-14,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-07-15,Moderate,xgboost
+Karachi,2023-07-16,Moderate,xgboost
+Karachi,2023-07-17,Moderate,xgboost
+Karachi,2023-07-18,Moderate,xgboost
+Karachi,2023-07-19,Moderate,xgboost
+Karachi,2023-07-20,Moderate,xgboost
+Karachi,2023-07-21,Moderate,xgboost
+Karachi,2023-07-22,Moderate,xgboost
+Karachi,2023-07-23,Moderate,xgboost
+Karachi,2023-07-24,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-07-25,Moderate,xgboost
+Karachi,2023-07-26,Moderate,xgboost
+Karachi,2023-07-27,Moderate,xgboost
+Karachi,2023-07-28,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-07-29,Moderate,xgboost
+Karachi,2023-07-30,Moderate,xgboost
+Karachi,2023-07-31,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-08-01,Moderate,xgboost
+Karachi,2023-08-02,Moderate,xgboost
+Karachi,2023-08-03,Moderate,xgboost
+Karachi,2023-08-04,Moderate,xgboost
+Karachi,2023-08-05,Moderate,xgboost
+Karachi,2023-08-06,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-08-07,Moderate,xgboost
+Karachi,2023-08-08,Moderate,xgboost
+Karachi,2023-08-09,Moderate,xgboost
+Karachi,2023-08-10,Moderate,xgboost
+Karachi,2023-08-11,Moderate,xgboost
+Karachi,2023-08-12,Moderate,xgboost
+Karachi,2023-08-13,Moderate,xgboost
+Karachi,2023-08-14,Moderate,xgboost
+Karachi,2023-08-15,Moderate,xgboost
+Karachi,2023-08-16,Moderate,xgboost
+Karachi,2023-08-17,Moderate,xgboost
+Karachi,2023-08-18,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-08-19,Moderate,xgboost
+Karachi,2023-08-20,Moderate,xgboost
+Karachi,2023-08-21,Moderate,xgboost
+Karachi,2023-08-22,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-08-23,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-08-24,Moderate,xgboost
+Karachi,2023-08-25,Moderate,xgboost
+Karachi,2023-08-26,Moderate,xgboost
+Karachi,2023-08-27,Moderate,xgboost
+Karachi,2023-08-28,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-08-29,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-08-30,Moderate,xgboost
+Karachi,2023-08-31,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-09-01,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-09-02,Moderate,xgboost
+Karachi,2023-09-03,Moderate,xgboost
+Karachi,2023-09-04,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-09-05,Moderate,xgboost
+Karachi,2023-09-06,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-09-07,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-09-08,Moderate,xgboost
+Karachi,2023-09-09,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-09-10,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-09-11,Moderate,xgboost
+Karachi,2023-09-12,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-09-13,Moderate,xgboost
+Karachi,2023-09-14,Moderate,xgboost
+Karachi,2023-09-15,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-09-16,Moderate,xgboost
+Karachi,2023-09-17,Moderate,xgboost
+Karachi,2023-09-18,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-09-19,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-09-20,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-09-21,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-09-22,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-09-23,Hazardous,xgboost
+Karachi,2023-09-24,Moderate,xgboost
+Karachi,2023-09-25,Moderate,xgboost
+Karachi,2023-09-26,Moderate,xgboost
+Karachi,2023-09-27,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-09-28,Moderate,xgboost
+Karachi,2023-09-29,Moderate,xgboost
+Karachi,2023-09-30,Moderate,xgboost
+Karachi,2023-10-01,Moderate,xgboost
+Karachi,2023-10-02,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-10-03,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-10-04,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-10-05,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-10-06,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-10-07,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-10-08,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-10-09,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-10-10,Hazardous,xgboost
+Karachi,2023-10-11,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-10-12,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-10-13,Moderate,xgboost
+Karachi,2023-10-14,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-10-15,Moderate,xgboost
+Karachi,2023-10-16,Moderate,xgboost
+Karachi,2023-10-17,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-10-18,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-10-19,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-10-20,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-10-21,Moderate,xgboost
+Karachi,2023-10-22,Moderate,xgboost
+Karachi,2023-10-23,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-10-24,Moderate,xgboost
+Karachi,2023-10-25,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-10-26,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-10-27,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-10-28,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-10-29,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-10-30,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-10-31,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-11-01,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-11-02,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-11-03,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-11-04,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-11-05,Unhealthy,xgboost
+Karachi,2023-11-06,Unhealthy,xgboost
+Karachi,2023-11-07,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-11-08,Unhealthy,xgboost
+Karachi,2023-11-09,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-11-10,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-11-11,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-11-12,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-11-13,Unhealthy,xgboost
+Karachi,2023-11-14,Unhealthy,xgboost
+Karachi,2023-11-15,Unhealthy,xgboost
+Karachi,2023-11-16,Unhealthy,xgboost
+Karachi,2023-11-17,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-11-18,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-11-19,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-11-20,Unhealthy,xgboost
+Karachi,2023-11-21,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-11-22,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-11-23,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-11-24,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-11-25,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-11-26,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-11-27,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-11-28,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-11-29,Unhealthy,xgboost
+Karachi,2023-11-30,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-12-01,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-12-02,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-12-03,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-12-04,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-12-05,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-12-06,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-12-07,Unhealthy,xgboost
+Karachi,2023-12-08,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-12-09,Unhealthy,xgboost
+Karachi,2023-12-10,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-12-11,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-12-12,Unhealthy,xgboost
+Karachi,2023-12-13,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-12-14,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-12-15,Unhealthy,xgboost
+Karachi,2023-12-16,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-12-17,Unhealthy,xgboost
+Karachi,2023-12-18,Unhealthy,xgboost
+Karachi,2023-12-19,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-12-20,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-12-21,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-12-22,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-12-23,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-12-24,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-12-25,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-12-26,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-12-27,Very Unhealthy,xgboost
+Karachi,2023-12-28,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-12-29,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-12-30,Unhealthy for Sensitive Groups,xgboost
+Karachi,2023-12-31,Unhealthy for Sensitive Groups,xgboost
+Karachi,2024-01-01,Unhealthy for Sensitive Groups,xgboost
+Karachi,2024-01-02,Unhealthy for Sensitive Groups,xgboost_forecast
+Karachi,2024-01-03,Unhealthy for Sensitive Groups,xgboost_forecast
+Karachi,2024-01-04,Unhealthy for Sensitive Groups,xgboost_forecast
+Lahore,2023-05-27,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-05-28,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-05-29,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-05-30,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-05-31,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-06-01,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-06-02,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-06-03,Moderate,xgboost
+Lahore,2023-06-04,Moderate,xgboost
+Lahore,2023-06-05,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-06-06,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-06-07,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-06-08,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-06-09,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-06-10,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-06-11,Moderate,xgboost
+Lahore,2023-06-12,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-06-13,Moderate,xgboost
+Lahore,2023-06-14,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-06-15,Moderate,xgboost
+Lahore,2023-06-16,Moderate,xgboost
+Lahore,2023-06-17,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-06-18,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-06-19,Moderate,xgboost
+Lahore,2023-06-20,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-06-21,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-06-22,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-06-23,Moderate,xgboost
+Lahore,2023-06-24,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-06-25,Moderate,xgboost
+Lahore,2023-06-26,Moderate,xgboost
+Lahore,2023-06-27,Moderate,xgboost
+Lahore,2023-06-28,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-06-29,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-06-30,Moderate,xgboost
+Lahore,2023-07-01,Moderate,xgboost
+Lahore,2023-07-02,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-07-03,Moderate,xgboost
+Lahore,2023-07-04,Moderate,xgboost
+Lahore,2023-07-05,Unhealthy,xgboost
+Lahore,2023-07-06,Moderate,xgboost
+Lahore,2023-07-07,Moderate,xgboost
+Lahore,2023-07-08,Moderate,xgboost
+Lahore,2023-07-09,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-07-10,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-07-11,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-07-12,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-07-13,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-07-14,Moderate,xgboost
+Lahore,2023-07-15,Moderate,xgboost
+Lahore,2023-07-16,Moderate,xgboost
+Lahore,2023-07-17,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-07-18,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-07-19,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-07-20,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-07-21,Moderate,xgboost
+Lahore,2023-07-22,Moderate,xgboost
+Lahore,2023-07-23,Moderate,xgboost
+Lahore,2023-07-24,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-07-25,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-07-26,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-07-27,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-07-28,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-07-29,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-07-30,Moderate,xgboost
+Lahore,2023-07-31,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-08-01,Moderate,xgboost
+Lahore,2023-08-02,Moderate,xgboost
+Lahore,2023-08-03,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-08-04,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-08-05,Moderate,xgboost
+Lahore,2023-08-06,Moderate,xgboost
+Lahore,2023-08-07,Moderate,xgboost
+Lahore,2023-08-08,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-08-09,Moderate,xgboost
+Lahore,2023-08-10,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-08-11,Unhealthy,xgboost
+Lahore,2023-08-12,Moderate,xgboost
+Lahore,2023-08-13,Moderate,xgboost
+Lahore,2023-08-14,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-08-15,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-08-16,Moderate,xgboost
+Lahore,2023-08-17,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-08-18,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-08-19,Moderate,xgboost
+Lahore,2023-08-20,Moderate,xgboost
+Lahore,2023-08-21,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-08-22,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-08-23,Moderate,xgboost
+Lahore,2023-08-24,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-08-25,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-08-26,Moderate,xgboost
+Lahore,2023-08-27,Moderate,xgboost
+Lahore,2023-08-28,Moderate,xgboost
+Lahore,2023-08-29,Moderate,xgboost
+Lahore,2023-08-30,Moderate,xgboost
+Lahore,2023-08-31,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-09-01,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-09-02,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-09-03,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-09-04,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-09-05,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-09-06,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-09-07,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-09-08,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-09-09,Moderate,xgboost
+Lahore,2023-09-10,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-09-11,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-09-12,Unhealthy,xgboost
+Lahore,2023-09-13,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-09-14,Unhealthy,xgboost
+Lahore,2023-09-15,Unhealthy,xgboost
+Lahore,2023-09-16,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-09-17,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-09-18,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-09-19,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-09-20,Unhealthy,xgboost
+Lahore,2023-09-21,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-09-22,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-09-23,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-09-24,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-09-25,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-09-26,Unhealthy,xgboost
+Lahore,2023-09-27,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-09-28,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-09-29,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-09-30,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-10-01,Unhealthy,xgboost
+Lahore,2023-10-02,Unhealthy,xgboost
+Lahore,2023-10-03,Unhealthy,xgboost
+Lahore,2023-10-04,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-10-05,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-10-06,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-10-07,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-10-08,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-10-09,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-10-10,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-10-11,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-10-12,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-10-13,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-10-14,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-10-15,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-10-16,Unhealthy,xgboost
+Lahore,2023-10-17,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-10-18,Unhealthy,xgboost
+Lahore,2023-10-19,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-10-20,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-10-21,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-10-22,Unhealthy,xgboost
+Lahore,2023-10-23,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-10-24,Unhealthy,xgboost
+Lahore,2023-10-25,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-10-26,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-10-27,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-10-28,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-10-29,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-10-30,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-10-31,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-11-01,Very Unhealthy,xgboost
+Lahore,2023-11-02,Very Unhealthy,xgboost
+Lahore,2023-11-03,Unhealthy,xgboost
+Lahore,2023-11-04,Unhealthy,xgboost
+Lahore,2023-11-05,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-11-06,Very Unhealthy,xgboost
+Lahore,2023-11-07,Very Unhealthy,xgboost
+Lahore,2023-11-08,Very Unhealthy,xgboost
+Lahore,2023-11-09,Very Unhealthy,xgboost
+Lahore,2023-11-10,Very Unhealthy,xgboost
+Lahore,2023-11-11,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-11-12,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-11-13,Unhealthy,xgboost
+Lahore,2023-11-14,Very Unhealthy,xgboost
+Lahore,2023-11-15,Unhealthy,xgboost
+Lahore,2023-11-16,Unhealthy,xgboost
+Lahore,2023-11-17,Unhealthy,xgboost
+Lahore,2023-11-18,Unhealthy,xgboost
+Lahore,2023-11-19,Unhealthy,xgboost
+Lahore,2023-11-20,Unhealthy,xgboost
+Lahore,2023-11-21,Unhealthy,xgboost
+Lahore,2023-11-22,Unhealthy,xgboost
+Lahore,2023-11-23,Very Unhealthy,xgboost
+Lahore,2023-11-24,Unhealthy,xgboost
+Lahore,2023-11-25,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-11-26,Unhealthy,xgboost
+Lahore,2023-11-27,Unhealthy,xgboost
+Lahore,2023-11-28,Unhealthy,xgboost
+Lahore,2023-11-29,Unhealthy,xgboost
+Lahore,2023-11-30,Unhealthy,xgboost
+Lahore,2023-12-01,Unhealthy,xgboost
+Lahore,2023-12-02,Unhealthy,xgboost
+Lahore,2023-12-03,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-12-04,Unhealthy,xgboost
+Lahore,2023-12-05,Unhealthy,xgboost
+Lahore,2023-12-06,Very Unhealthy,xgboost
+Lahore,2023-12-07,Unhealthy,xgboost
+Lahore,2023-12-08,Unhealthy,xgboost
+Lahore,2023-12-09,Unhealthy,xgboost
+Lahore,2023-12-10,Unhealthy,xgboost
+Lahore,2023-12-11,Unhealthy,xgboost
+Lahore,2023-12-12,Very Unhealthy,xgboost
+Lahore,2023-12-13,Very Unhealthy,xgboost
+Lahore,2023-12-14,Unhealthy,xgboost
+Lahore,2023-12-15,Very Unhealthy,xgboost
+Lahore,2023-12-16,Hazardous,xgboost
+Lahore,2023-12-17,Hazardous,xgboost
+Lahore,2023-12-18,Very Unhealthy,xgboost
+Lahore,2023-12-19,Unhealthy,xgboost
+Lahore,2023-12-20,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-12-21,Unhealthy,xgboost
+Lahore,2023-12-22,Unhealthy,xgboost
+Lahore,2023-12-23,Very Unhealthy,xgboost
+Lahore,2023-12-24,Unhealthy,xgboost
+Lahore,2023-12-25,Unhealthy,xgboost
+Lahore,2023-12-26,Unhealthy,xgboost
+Lahore,2023-12-27,Very Unhealthy,xgboost
+Lahore,2023-12-28,Unhealthy,xgboost
+Lahore,2023-12-29,Very Unhealthy,xgboost
+Lahore,2023-12-30,Unhealthy for Sensitive Groups,xgboost
+Lahore,2023-12-31,Unhealthy,xgboost
+Lahore,2024-01-01,Unhealthy,xgboost
+Lahore,2024-01-02,Unhealthy,xgboost_forecast
+Lahore,2024-01-03,Unhealthy,xgboost_forecast
+Lahore,2024-01-04,Unhealthy,xgboost_forecast
+Rawalpindi,2023-05-27,Hazardous,xgboost
+Rawalpindi,2023-05-28,Moderate,xgboost
+Rawalpindi,2023-05-29,Moderate,xgboost
+Rawalpindi,2023-05-30,Moderate,xgboost
+Rawalpindi,2023-05-31,Moderate,xgboost
+Rawalpindi,2023-06-01,Moderate,xgboost
+Rawalpindi,2023-06-02,Moderate,xgboost
+Rawalpindi,2023-06-03,Moderate,xgboost
+Rawalpindi,2023-06-04,Moderate,xgboost
+Rawalpindi,2023-06-05,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-06-06,Moderate,xgboost
+Rawalpindi,2023-06-07,Moderate,xgboost
+Rawalpindi,2023-06-08,Moderate,xgboost
+Rawalpindi,2023-06-09,Moderate,xgboost
+Rawalpindi,2023-06-10,Moderate,xgboost
+Rawalpindi,2023-06-11,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-06-12,Hazardous,xgboost
+Rawalpindi,2023-06-13,Moderate,xgboost
+Rawalpindi,2023-06-14,Hazardous,xgboost
+Rawalpindi,2023-06-15,Moderate,xgboost
+Rawalpindi,2023-06-16,Moderate,xgboost
+Rawalpindi,2023-06-17,Moderate,xgboost
+Rawalpindi,2023-06-18,Moderate,xgboost
+Rawalpindi,2023-06-19,Moderate,xgboost
+Rawalpindi,2023-06-20,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-06-21,Moderate,xgboost
+Rawalpindi,2023-06-22,Moderate,xgboost
+Rawalpindi,2023-06-23,Moderate,xgboost
+Rawalpindi,2023-06-24,Moderate,xgboost
+Rawalpindi,2023-06-25,Moderate,xgboost
+Rawalpindi,2023-06-26,Moderate,xgboost
+Rawalpindi,2023-06-27,Moderate,xgboost
+Rawalpindi,2023-06-28,Moderate,xgboost
+Rawalpindi,2023-06-29,Moderate,xgboost
+Rawalpindi,2023-06-30,Moderate,xgboost
+Rawalpindi,2023-07-01,Moderate,xgboost
+Rawalpindi,2023-07-02,Moderate,xgboost
+Rawalpindi,2023-07-03,Moderate,xgboost
+Rawalpindi,2023-07-04,Moderate,xgboost
+Rawalpindi,2023-07-05,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-07-06,Moderate,xgboost
+Rawalpindi,2023-07-07,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-07-08,Moderate,xgboost
+Rawalpindi,2023-07-09,Moderate,xgboost
+Rawalpindi,2023-07-10,Moderate,xgboost
+Rawalpindi,2023-07-11,Moderate,xgboost
+Rawalpindi,2023-07-12,Moderate,xgboost
+Rawalpindi,2023-07-13,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-07-14,Moderate,xgboost
+Rawalpindi,2023-07-15,Moderate,xgboost
+Rawalpindi,2023-07-16,Moderate,xgboost
+Rawalpindi,2023-07-17,Moderate,xgboost
+Rawalpindi,2023-07-18,Moderate,xgboost
+Rawalpindi,2023-07-19,Moderate,xgboost
+Rawalpindi,2023-07-20,Moderate,xgboost
+Rawalpindi,2023-07-21,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-07-22,Moderate,xgboost
+Rawalpindi,2023-07-23,Moderate,xgboost
+Rawalpindi,2023-07-24,Hazardous,xgboost
+Rawalpindi,2023-07-25,Moderate,xgboost
+Rawalpindi,2023-07-26,Moderate,xgboost
+Rawalpindi,2023-07-27,Moderate,xgboost
+Rawalpindi,2023-07-28,Moderate,xgboost
+Rawalpindi,2023-07-29,Moderate,xgboost
+Rawalpindi,2023-07-30,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-07-31,Good,xgboost
+Rawalpindi,2023-08-01,Moderate,xgboost
+Rawalpindi,2023-08-02,Moderate,xgboost
+Rawalpindi,2023-08-03,Moderate,xgboost
+Rawalpindi,2023-08-04,Moderate,xgboost
+Rawalpindi,2023-08-05,Moderate,xgboost
+Rawalpindi,2023-08-06,Moderate,xgboost
+Rawalpindi,2023-08-07,Moderate,xgboost
+Rawalpindi,2023-08-08,Moderate,xgboost
+Rawalpindi,2023-08-09,Moderate,xgboost
+Rawalpindi,2023-08-10,Moderate,xgboost
+Rawalpindi,2023-08-11,Moderate,xgboost
+Rawalpindi,2023-08-12,Moderate,xgboost
+Rawalpindi,2023-08-13,Good,xgboost
+Rawalpindi,2023-08-14,Moderate,xgboost
+Rawalpindi,2023-08-15,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-08-16,Moderate,xgboost
+Rawalpindi,2023-08-17,Moderate,xgboost
+Rawalpindi,2023-08-18,Hazardous,xgboost
+Rawalpindi,2023-08-19,Moderate,xgboost
+Rawalpindi,2023-08-20,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-08-21,Moderate,xgboost
+Rawalpindi,2023-08-22,Moderate,xgboost
+Rawalpindi,2023-08-23,Moderate,xgboost
+Rawalpindi,2023-08-24,Moderate,xgboost
+Rawalpindi,2023-08-25,Moderate,xgboost
+Rawalpindi,2023-08-26,Moderate,xgboost
+Rawalpindi,2023-08-27,Moderate,xgboost
+Rawalpindi,2023-08-28,Moderate,xgboost
+Rawalpindi,2023-08-29,Moderate,xgboost
+Rawalpindi,2023-08-30,Moderate,xgboost
+Rawalpindi,2023-08-31,Moderate,xgboost
+Rawalpindi,2023-09-01,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-09-02,Moderate,xgboost
+Rawalpindi,2023-09-03,Moderate,xgboost
+Rawalpindi,2023-09-04,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-09-05,Moderate,xgboost
+Rawalpindi,2023-09-06,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-09-07,Moderate,xgboost
+Rawalpindi,2023-09-08,Moderate,xgboost
+Rawalpindi,2023-09-09,Moderate,xgboost
+Rawalpindi,2023-09-10,Moderate,xgboost
+Rawalpindi,2023-09-11,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-09-12,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-09-13,Moderate,xgboost
+Rawalpindi,2023-09-14,Moderate,xgboost
+Rawalpindi,2023-09-15,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-09-16,Moderate,xgboost
+Rawalpindi,2023-09-17,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-09-18,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-09-19,Moderate,xgboost
+Rawalpindi,2023-09-20,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-09-21,Moderate,xgboost
+Rawalpindi,2023-09-22,Moderate,xgboost
+Rawalpindi,2023-09-23,Moderate,xgboost
+Rawalpindi,2023-09-24,Moderate,xgboost
+Rawalpindi,2023-09-25,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-09-26,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-09-27,Moderate,xgboost
+Rawalpindi,2023-09-28,Moderate,xgboost
+Rawalpindi,2023-09-29,Moderate,xgboost
+Rawalpindi,2023-09-30,Moderate,xgboost
+Rawalpindi,2023-10-01,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-10-02,Moderate,xgboost
+Rawalpindi,2023-10-03,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-10-04,Moderate,xgboost
+Rawalpindi,2023-10-05,Moderate,xgboost
+Rawalpindi,2023-10-06,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-10-07,Moderate,xgboost
+Rawalpindi,2023-10-08,Moderate,xgboost
+Rawalpindi,2023-10-09,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-10-10,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-10-11,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-10-12,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-10-13,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-10-14,Moderate,xgboost
+Rawalpindi,2023-10-15,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-10-16,Moderate,xgboost
+Rawalpindi,2023-10-17,Hazardous,xgboost
+Rawalpindi,2023-10-18,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-10-19,Moderate,xgboost
+Rawalpindi,2023-10-20,Moderate,xgboost
+Rawalpindi,2023-10-21,Moderate,xgboost
+Rawalpindi,2023-10-22,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-10-23,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-10-24,Moderate,xgboost
+Rawalpindi,2023-10-25,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-10-26,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-10-27,Moderate,xgboost
+Rawalpindi,2023-10-28,Moderate,xgboost
+Rawalpindi,2023-10-29,Moderate,xgboost
+Rawalpindi,2023-10-30,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-10-31,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-11-01,Unhealthy,xgboost
+Rawalpindi,2023-11-02,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-11-03,Unhealthy,xgboost
+Rawalpindi,2023-11-04,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-11-05,Moderate,xgboost
+Rawalpindi,2023-11-06,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-11-07,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-11-08,Unhealthy,xgboost
+Rawalpindi,2023-11-09,Unhealthy,xgboost
+Rawalpindi,2023-11-10,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-11-11,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-11-12,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-11-13,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-11-14,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-11-15,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-11-16,Unhealthy,xgboost
+Rawalpindi,2023-11-17,Unhealthy,xgboost
+Rawalpindi,2023-11-18,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-11-19,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-11-20,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-11-21,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-11-22,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-11-23,Unhealthy,xgboost
+Rawalpindi,2023-11-24,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-11-25,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-11-26,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-11-27,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-11-28,Unhealthy,xgboost
+Rawalpindi,2023-11-29,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-11-30,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-12-01,Unhealthy,xgboost
+Rawalpindi,2023-12-02,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-12-03,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-12-04,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-12-05,Unhealthy,xgboost
+Rawalpindi,2023-12-06,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-12-07,Unhealthy,xgboost
+Rawalpindi,2023-12-08,Unhealthy,xgboost
+Rawalpindi,2023-12-09,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-12-10,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-12-11,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-12-12,Unhealthy,xgboost
+Rawalpindi,2023-12-13,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-12-14,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-12-15,Unhealthy,xgboost
+Rawalpindi,2023-12-16,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-12-17,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-12-18,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-12-19,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-12-20,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-12-21,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-12-22,Unhealthy,xgboost
+Rawalpindi,2023-12-23,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-12-24,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-12-25,Unhealthy,xgboost
+Rawalpindi,2023-12-26,Unhealthy,xgboost
+Rawalpindi,2023-12-27,Unhealthy,xgboost
+Rawalpindi,2023-12-28,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-12-29,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-12-30,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2023-12-31,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2024-01-01,Unhealthy for Sensitive Groups,xgboost
+Rawalpindi,2024-01-02,Unhealthy for Sensitive Groups,xgboost_forecast
+Rawalpindi,2024-01-03,Unhealthy for Sensitive Groups,xgboost_forecast
+Rawalpindi,2024-01-04,Unhealthy for Sensitive Groups,xgboost_forecast
