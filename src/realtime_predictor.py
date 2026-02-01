@@ -132,8 +132,48 @@ class RealTimeAQIPredictor:
             wind_speed = float(input_data['Wind_Speed'])
             if wind_speed > 10:  # High wind can disperse pollution
                 confidence *= 0.9
+                # Might improve category slightly
+                if pm25 > 35 and wind_speed > 15:
+                    categories = ['Good', 'Moderate', 'Unhealthy for Sensitive Groups', 
+                                'Unhealthy', 'Very Unhealthy', 'Hazardous']
+                    current_idx = categories.index(category)
+                    if current_idx > 0:
+                        category = categories[current_idx - 1]  # Better category
+                        confidence *= 0.95
             elif wind_speed < 2:  # Low wind can trap pollution
                 confidence *= 0.95
+                # Might worsen category slightly
+                if pm25 > 20 and wind_speed < 1:
+                    categories = ['Good', 'Moderate', 'Unhealthy for Sensitive Groups', 
+                                'Unhealthy', 'Very Unhealthy', 'Hazardous']
+                    current_idx = categories.index(category)
+                    if current_idx < len(categories) - 1:
+                        category = categories[current_idx + 1]  # Worse category
+                        confidence *= 0.9
+        
+        # City-specific adjustments
+        if 'City' in input_data:
+            city = input_data['City'].lower()
+            if 'karachi' in city:
+                # Coastal city, humidity affects pollution perception
+                if input_data.get('Humidity', 60) > 80:
+                    confidence *= 0.9
+            elif 'lahore' in city:
+                # Industrial city, pollution tends to be worse
+                if pm25 > 30:
+                    confidence *= 0.95
+            elif 'islamabad' in city:
+                # Capital city, generally cleaner
+                if pm25 < 50:
+                    confidence *= 1.05
+        
+        # Temperature effects
+        if 'Temperature' in input_data:
+            temp = float(input_data['Temperature'])
+            if temp > 35:  # Very hot weather can worsen air quality perception
+                confidence *= 0.95
+            elif temp < 15:  # Cold weather can trap pollutants
+                confidence *= 0.9
         
         return category, min(confidence, 0.95)
     
@@ -224,8 +264,13 @@ class RealTimeAQIPredictor:
             'Wind_Speed': input_data.get('Wind_Speed', 5)
         }
         
-        # Set random seed based on input values for consistent but varied results
-        seed = int(sum(base_values.values()) * 1000) % 2147483647
+        # Create city-specific and condition-specific seed for more variety
+        city_factor = hash(input_data.get('City', 'default')) % 1000
+        condition_factor = int(sum(base_values.values()) * 100) % 1000
+        time_factor = int(datetime.now().timestamp()) % 1000
+        
+        # Combine factors for unique but deterministic seed
+        seed = (city_factor + condition_factor + time_factor) % 2147483647
         np.random.seed(seed)
         
         # Create lag features with more realistic variations
@@ -237,50 +282,83 @@ class RealTimeAQIPredictor:
                     
                     # Create more realistic lag values based on pollution patterns
                     if base_key in ['PM2.5', 'PM10']:
-                        # Pollution tends to accumulate, so lag values might be lower
-                        lag_factor = 0.7 + (lag * 0.05)  # Older values tend to be different
-                        variation = np.random.normal(0, 0.15 + lag * 0.05) * base_value
+                        # Pollution tends to accumulate, so lag values might be different
+                        # Add city-specific pollution patterns
+                        city_pollution_factor = 1.0
+                        if 'City' in input_data:
+                            city = input_data['City'].lower()
+                            if 'karachi' in city or 'lahore' in city:
+                                city_pollution_factor = 1.2  # Higher pollution cities
+                            elif 'islamabad' in city:
+                                city_pollution_factor = 0.8  # Cleaner city
+                        
+                        lag_factor = 0.6 + (lag * 0.08) * city_pollution_factor
+                        variation = np.random.normal(0, 0.2 + lag * 0.05) * base_value
                         feature_vector[idx] = max(0, base_value * lag_factor + variation)
                     elif base_key == 'Wind_Speed':
-                        # Wind speed varies more randomly
-                        variation = np.random.normal(0, 0.3) * base_value
+                        # Wind speed varies more randomly, affected by geography
+                        geographic_factor = 1.0
+                        if 'City' in input_data:
+                            city = input_data['City'].lower()
+                            if 'karachi' in city:  # Coastal city, more wind
+                                geographic_factor = 1.3
+                            elif 'lahore' in city:  # Inland, less wind
+                                geographic_factor = 0.7
+                        
+                        variation = np.random.normal(0, 0.4) * base_value * geographic_factor
                         feature_vector[idx] = max(0.1, base_value + variation)
                     else:
                         # Temperature and humidity have seasonal patterns
-                        variation = np.random.normal(0, 0.1 + lag * 0.02) * base_value
-                        feature_vector[idx] = base_value + variation
+                        seasonal_variation = np.random.normal(0, 0.15 + lag * 0.03) * base_value
+                        feature_vector[idx] = base_value + seasonal_variation
         
         # Create rolling features with more realistic statistics
         for base_key, base_value in base_values.items():
             for window in [3, 7, 14]:
-                # Rolling mean (slightly different from current)
+                # Rolling mean (varies based on conditions)
                 roll_mean_feature = f'{base_key}_roll_mean_{window}'
                 if roll_mean_feature in self.feature_columns:
                     idx = self.feature_columns.index(roll_mean_feature)
-                    mean_variation = np.random.normal(0, 0.05) * base_value
-                    feature_vector[idx] = base_value + mean_variation
+                    
+                    # Add trend based on pollution level
+                    if base_key in ['PM2.5', 'PM10']:
+                        if base_value > 100:  # High pollution trend
+                            trend_factor = 1.1
+                        elif base_value < 30:  # Clean air trend
+                            trend_factor = 0.9
+                        else:
+                            trend_factor = 1.0
+                    else:
+                        trend_factor = 1.0
+                    
+                    mean_variation = np.random.normal(0, 0.08) * base_value
+                    feature_vector[idx] = base_value * trend_factor + mean_variation
                 
-                # Rolling std (realistic standard deviation)
+                # Rolling std (realistic standard deviation based on conditions)
                 roll_std_feature = f'{base_key}_roll_std_{window}'
                 if roll_std_feature in self.feature_columns:
                     idx = self.feature_columns.index(roll_std_feature)
                     if base_key in ['PM2.5', 'PM10']:
-                        # Pollution has higher variability
-                        feature_vector[idx] = base_value * (0.15 + np.random.uniform(0, 0.1))
+                        # Higher pollution = higher variability
+                        variability_factor = 0.1 + (base_value / 200.0) * 0.2
+                        feature_vector[idx] = base_value * (variability_factor + np.random.uniform(0, 0.05))
                     else:
                         # Weather parameters have lower variability
-                        feature_vector[idx] = base_value * (0.05 + np.random.uniform(0, 0.05))
+                        feature_vector[idx] = base_value * (0.05 + np.random.uniform(0, 0.03))
                 
-                # Rolling max (higher than current, varies by parameter)
+                # Rolling max (higher than current, varies by parameter and conditions)
                 roll_max_feature = f'{base_key}_roll_max_{window}'
                 if roll_max_feature in self.feature_columns:
                     idx = self.feature_columns.index(roll_max_feature)
                     if base_key in ['PM2.5', 'PM10']:
-                        # Pollution peaks can be much higher
-                        max_factor = 1.2 + np.random.uniform(0, 0.5)
+                        # Pollution peaks can be much higher, especially in polluted cities
+                        if base_value > 80:  # Already high pollution
+                            max_factor = 1.3 + np.random.uniform(0, 0.4)
+                        else:
+                            max_factor = 1.2 + np.random.uniform(0, 0.3)
                     else:
                         # Weather parameters have smaller peaks
-                        max_factor = 1.05 + np.random.uniform(0, 0.1)
+                        max_factor = 1.05 + np.random.uniform(0, 0.08)
                     feature_vector[idx] = base_value * max_factor
     
     def _add_seasonal_features(self, feature_vector, input_data):

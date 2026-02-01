@@ -1,0 +1,11 @@
+PM2.5,PM10,Temperature,Humidity,Wind_Speed,City
+15,25,22,45,8,Islamabad
+25,40,24,50,6,Islamabad
+45,75,28,65,3,Lahore
+65,95,30,70,2,Lahore
+120,180,35,80,1,Karachi
+85,130,32,75,2,Faisalabad
+10,20,18,40,12,Islamabad
+200,280,38,85,0.5,Karachi
+55,85,29,68,4,Rawalpindi
+35,60,26,55,5,Multan

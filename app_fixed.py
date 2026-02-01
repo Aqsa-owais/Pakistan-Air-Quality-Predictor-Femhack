@@ -265,7 +265,7 @@ def render_historical_forecast_tab():
     col1, col2 = st.columns([2, 1])
     
     with col1:
-        st.markdown(f"#### 📊 Air Quality Forecast - {selected_city}")
+        st.header(f"📊 Air Quality Forecast - {selected_city}")
         
         # Generate and display forecast
         try:
@@ -302,7 +302,7 @@ def render_historical_forecast_tab():
     
     with col2:
         # Current Conditions
-        st.markdown("#### 📈 Current Conditions")
+        st.markdown("### 📈 Current Conditions")
         latest_data = df[(df['City'] == selected_city)].tail(1)
         
         if not latest_data.empty:
@@ -376,7 +376,7 @@ def render_historical_forecast_tab():
                     """, unsafe_allow_html=True)
         
         # Health Tips
-        st.markdown("#### 💡 Health Tips")
+        st.markdown("### 💡 Health Tips")
         if not latest_data.empty:
             current_category = latest_data['AQI_Category'].iloc[0]
             health_tips = get_health_tips(current_category)
@@ -391,7 +391,7 @@ def render_historical_forecast_tab():
             """, unsafe_allow_html=True)
         
         # Data Status
-        st.markdown("#### 📊 Data Status")
+        st.markdown("### 📊 Data Status")
         st.markdown(f"""
         <div class="metric-card">
             <h4 style="margin-bottom: 0.5rem;">Dataset Information</h4>
@@ -406,7 +406,7 @@ def render_historical_forecast_tab():
         """, unsafe_allow_html=True)
         
         # Alerts
-        st.markdown("#### ⚠️ Alerts")
+        st.markdown("### ⚠️ Alerts")
         if forecasts:
             alerts = forecaster.generate_alerts(forecasts)
             if alerts:
